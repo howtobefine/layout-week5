@@ -1,5 +1,51 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.nav-layout {
+    min-width: 296px;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.nav-item {
+    position: relative;
+
+    a {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.nav-item:hover {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 32px;
+        left: -32px;
+        background-color: $success;
+    }
+}
+
+.logo {
+    transition: opacity .15s ease-in-out;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.profile {
+    transition: opacity .15s ease-in-out;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
