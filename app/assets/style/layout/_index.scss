@@ -29,23 +29,3 @@
         background-color: $success;
     }
 }
-
-.logo {
-    transition: opacity .15s ease-in-out;
-    &:hover {
-        opacity: 0.8;
-    }
-}
-
-.profile {
-    transition: opacity .15s ease-in-out;
-
-    img {
-        width: 40px;
-        height: 40px;
-    }
-
-    &:hover {
-        opacity: 0.8;
-    }
-}

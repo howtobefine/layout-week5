@@ -3,11 +3,29 @@
     padding: 32px;
 }
 
-.assignment-title {
-    margin-bottom: 0;
-    margin-right: 38px;
-}
-
 .dropdown-toggle::after {
     display: none !important;
+}
+
+.dropdown-all {
+    padding-top: 0;
+    padding-left: 0;
+}
+
+.dropdown-menu-courses {
+    border-radius: 2px;
+    padding: 0;
+}
+
+.dropdown-item-courses {
+    padding: 12px;
+    border-bottom: 1px solid $gray-400;
+
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
+.assignment-card {
+    margin-top: 10px;
 }

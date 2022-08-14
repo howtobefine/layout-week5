@@ -1,0 +1,55 @@
+.hover-success {
+    transition: color .15s ease-in-out;
+
+    &:hover {
+        color: $success;
+    }
+}
+
+.hover-opacity {
+    transition: opacity .15s ease-in-out;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.profile-size {
+    width: 40px;
+    height: 40px;
+}
+
+.p-card-text {
+    padding: 16px 0 16px 48px;
+}
+
+.p-reply{
+    padding: 16px 24px;
+}
+
+.p-pag-btn {
+    padding: 8px 32px;
+}
+
+.border-radius-2 {
+    border-radius: 2px;
+}
+
+.rounded-bottom-none {
+    border-radius: 2px 2px 0 0;
+}
+
+.rounded-none {
+    border-radius: 0;
+}
+
+.divider {
+    margin: 16.5px 0 17.5px 48px;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
+    color: $success;
+    background-color: $gray-100;
+    border-radius: 2px;
+}
