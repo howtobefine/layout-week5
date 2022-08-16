@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        <%- title %>
+    </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <nav class="nav nav-layout flex-column position-fixed bg-light justify-content-between">
+
+        <div>
+            <a href="./index.html" class="hover-opacity pb-5 ps-3"><img src="./assets/images/logo-ANSWER.png"
+                    alt="logo"></a>
+            <ul class="list-unstyled fw-bold nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="material-icons me-3">
+                            insert_chart
+                        </span>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="material-icons me-3">
+                            forum
+                        </span>
+                        <span>Question</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">
+                        <span class="material-icons me-3">
+                            assignment
+                        </span>
+                        <span>Assignment</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="material-icons me-3">
+                            video_library
+                        </span>
+                        <span>Course</span>
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./admin.html">
+                        <span class="material-icons me-3">
+                            group
+                        </span>
+                        <span>Admin</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="material-icons me-3">
+                            settings
+                        </span>
+                        <span>Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <a href="mailto:andy0401@mail.com" class="hover-opacity d-flex">
+            <img src="./assets/images/andychen.jpeg" class="rounded-circle profile-size" alt="profile">
+            <div class="profile-text ms-3">
+                <p class="fw-bold mb-1">Andy Chen</p>
+                <span class="text-primary fs-7">andy0401@mail.com</span>
+            </div>
+        </a>
+
+    </nav>
+
+    <%- contents %>
+
+
+        <script src="./assets/js/vendors.js"></script>
+        <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

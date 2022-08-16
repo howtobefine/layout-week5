@@ -29,3 +29,17 @@
         background-color: $success;
     }
 }
+
+.nav-item.active {
+    span{
+        color: $success;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 32px;
+        left: -32px;
+        background-color: $success;
+    }
+}
