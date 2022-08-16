@@ -67,8 +67,8 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $gray-600;// $blue !default;
+$secondary:     $gray-400;// $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -676,7 +676,7 @@ $form-label-margin-bottom:              .5rem !default;
 $form-label-font-size:                  null !default;
 $form-label-font-style:                 null !default;
 $form-label-font-weight:                null !default;
-$form-label-color:                      null !default;
+$form-label-color:                      $gray-900;// null !default;
 // scss-docs-end form-label-variables
 
 // scss-docs-start form-input-variables
@@ -704,7 +704,7 @@ $input-border-color:                    $gray-400 !default;
 $input-border-width:                    $input-btn-border-width !default;
 $input-box-shadow:                      $box-shadow-inset !default;
 
-$input-border-radius:                   $border-radius !default;
+$input-border-radius:                   2px;// $border-radius !default;
 $input-border-radius-sm:                $border-radius-sm !default;
 $input-border-radius-lg:                $border-radius-lg !default;
 
@@ -714,7 +714,7 @@ $input-focus-color:                     $input-color !default;
 $input-focus-width:                     $input-btn-focus-width !default;
 $input-focus-box-shadow:                $input-btn-focus-box-shadow !default;
 
-$input-placeholder-color:               $gray-600 !default;
+$input-placeholder-color:               $gray-900;// $gray-600 !default;
 $input-plaintext-color:                 $body-color !default;
 
 $input-height-border:                   $input-border-width * 2 !default;
@@ -731,7 +731,7 @@ $input-transition:                      border-color .15s ease-in-out, box-shado
 // scss-docs-end form-input-variables
 
 // scss-docs-start form-check-variables
-$form-check-input-width:                  1em !default;
+$form-check-input-width:                  1.4em;// 1em !default;
 $form-check-min-height:                   $font-size-base * $line-height-base !default;
 $form-check-padding-start:                $form-check-input-width + .5em !default;
 $form-check-margin-bottom:                .125rem !default;
@@ -1043,7 +1043,7 @@ $dropdown-dark-header-color:        $gray-500 !default;
 // Pagination
 
 // scss-docs-start pagination-variables
-$pagination-padding-y:              .375rem !default;
+$pagination-padding-y:              .575rem; //.375rem !default;
 $pagination-padding-x:              .75rem !default;
 $pagination-padding-y-sm:           .25rem !default;
 $pagination-padding-x-sm:           .5rem !default;
@@ -1053,22 +1053,22 @@ $pagination-padding-x-lg:           1.5rem !default;
 $pagination-color:                  $link-color !default;
 $pagination-bg:                     $white !default;
 $pagination-border-width:           $border-width !default;
-$pagination-border-radius:          $border-radius !default;
+$pagination-border-radius:          2px;// $border-radius !default;
 $pagination-margin-start:           -$pagination-border-width !default;
-$pagination-border-color:           $gray-300 !default;
+$pagination-border-color:           $success;// $gray-300 !default;
 
 $pagination-focus-color:            $link-hover-color !default;
 $pagination-focus-bg:               $gray-200 !default;
 $pagination-focus-box-shadow:       $input-btn-focus-box-shadow !default;
 $pagination-focus-outline:          0 !default;
 
-$pagination-hover-color:            $link-hover-color !default;
-$pagination-hover-bg:               $gray-200 !default;
-$pagination-hover-border-color:     $gray-300 !default;
+$pagination-hover-color:            $white;// $link-hover-color !default;
+$pagination-hover-bg:               $success;// $gray-200 !default;
+$pagination-hover-border-color:     $success;//$gray-300 !default;
 
-$pagination-active-color:           $component-active-color !default;
-$pagination-active-bg:              $component-active-bg !default;
-$pagination-active-border-color:    $pagination-active-bg !default;
+$pagination-active-color:           $white;// $component-active-color !default;
+$pagination-active-bg:              $success;// $component-active-bg !default;
+$pagination-active-border-color:    $success;// $pagination-active-bg !default;
 
 $pagination-disabled-color:         $gray-600 !default;
 $pagination-disabled-bg:            $white !default;
@@ -1110,8 +1110,8 @@ $accordion-padding-x:                     1.25rem !default;
 $accordion-color:                         $body-color !default;
 $accordion-bg:                            $body-bg !default;
 $accordion-border-width:                  $border-width !default;
-$accordion-border-color:                  rgba($black, .125) !default;
-$accordion-border-radius:                 $border-radius !default;
+$accordion-border-color:                  $white;//rgba($black, .125) !default;
+$accordion-border-radius:                 0;// $border-radius !default;
 $accordion-inner-border-radius:           subtract($accordion-border-radius, $accordion-border-width) !default;
 
 $accordion-body-padding-y:                $accordion-padding-y !default;
@@ -1122,15 +1122,15 @@ $accordion-button-padding-x:              $accordion-padding-x !default;
 $accordion-button-color:                  $accordion-color !default;
 $accordion-button-bg:                     $accordion-bg !default;
 $accordion-transition:                    $btn-transition, border-radius .15s ease !default;
-$accordion-button-active-bg:              tint-color($component-active-bg, 90%) !default;
+$accordion-button-active-bg:              transparent;// tint-color($component-active-bg, 90%) !default;
 $accordion-button-active-color:           shade-color($primary, 10%) !default;
 
 $accordion-button-focus-border-color:     $input-focus-border-color !default;
 $accordion-button-focus-box-shadow:       $btn-focus-box-shadow !default;
 
-$accordion-icon-width:                    1.25rem !default;
-$accordion-icon-color:                    $accordion-color !default;
-$accordion-icon-active-color:             $accordion-button-active-color !default;
+$accordion-icon-width:                    1rem;// 1.25rem !default;
+$accordion-icon-color:                    $success;//$accordion-color !default;
+$accordion-icon-active-color:             $success;//$accordion-button-active-color !default;
 $accordion-icon-transition:               transform .2s ease-in-out !default;
 $accordion-icon-transform:                rotate(-180deg) !default;
 
@@ -1243,9 +1243,9 @@ $modal-title-line-height:           $line-height-base !default;
 
 $modal-content-color:               null !default;
 $modal-content-bg:                  $white !default;
-$modal-content-border-color:        rgba($black, .2) !default;
+$modal-content-border-color:        $secondary;// rgba($black, .2) !default;
 $modal-content-border-width:        $border-width !default;
-$modal-content-border-radius:       $border-radius-lg !default;
+$modal-content-border-radius:       2px;// $border-radius-lg !default;
 $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
 $modal-content-box-shadow-xs:       $box-shadow-sm !default;
 $modal-content-box-shadow-sm-up:    $box-shadow !default;
@@ -1430,10 +1430,10 @@ $btn-close-width:            1em !default;
 $btn-close-height:           $btn-close-width !default;
 $btn-close-padding-x:        .25em !default;
 $btn-close-padding-y:        $btn-close-padding-x !default;
-$btn-close-color:            $black !default;
+$btn-close-color:            $dark;// $black !default;
 $btn-close-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/></svg>") !default;
 $btn-close-focus-shadow:     $input-btn-focus-box-shadow !default;
-$btn-close-opacity:          .5 !default;
+$btn-close-opacity:          1;//.5 !default;
 $btn-close-hover-opacity:    .75 !default;
 $btn-close-focus-opacity:    1 !default;
 $btn-close-disabled-opacity: .25 !default;

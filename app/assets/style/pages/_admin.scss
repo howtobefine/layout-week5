@@ -1,0 +1,26 @@
+.admin {
+    margin-left: 296px;
+    padding: 32px;
+}
+
+.table-header th {
+    padding-bottom: 4.5px;
+
+    &:first-child {
+        margin-top: 16.5px;
+    }
+}
+
+.table-row {
+    td {
+        padding: 19px 0 17px 8px !important;
+    }
+
+    th {
+        padding: 19px 8px 17px 0 !important;
+    }
+}
+
+#table-icon {
+    padding: 19px 1.5px 17.5px 8px !important;
+}
